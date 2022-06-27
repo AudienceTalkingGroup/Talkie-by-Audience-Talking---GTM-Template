@@ -15,5 +15,5 @@
 homepage: "https://audiencetalking.com/"
 documentation: "https://docs.audiencetalking.com/es/calltracking/interfaz/integraciones#google-tag-manager"
 versions:
-  - sha: ae96c4c852eb1116173343703d375974778197f1
+  - sha: 3200bb6c0f857a332de6a34e34ba27ae1dd470d0
     changeNotes: Update template.tpl
