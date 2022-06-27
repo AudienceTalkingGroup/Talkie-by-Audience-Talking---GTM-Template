@@ -14,6 +14,7 @@ ___INFO___
   "version": 1,
   "securityGroups": [],
   "displayName": "Talkie by Audience Talking",
+  "categories": ["ATTRIBUTION", "CONVERSIONS"],
   "brand": {
     "id": "brand_dummy",
     "displayName": "",
