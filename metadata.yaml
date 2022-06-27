@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-homepage: "https://www.example.com"
-documentation: "https://www.example.com/documentation"
+homepage: "https://audiencetalking.com/"
+documentation: "https://docs.audiencetalking.com/es/calltracking/interfaz/integraciones#google-tag-manager"
 versions:
-  - sha: 5f02a788b90ae804f86b04aa24af8937e567874a
-    changeNotes: Initial Version
+  - sha: ae96c4c852eb1116173343703d375974778197f1
+    changeNotes: Update template.tpl
