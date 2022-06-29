@@ -35,64 +35,72 @@ ___TEMPLATE_PARAMETERS___
     "name": "talkieDomain",
     "simpleValueType": true,
     "alwaysInSummary": true,
-    "displayName": "Dominio de cuenta proporcionado por Talkie"
-  },
-  {
-    "type": "TEXT",
-    "name": "matchId",
-    "simpleValueType": true,
-    "alwaysInSummary": true,
-    "displayName": "Match ID - Identificador de usuario proporcionado por el cliente",
-    "canBeEmptyString": true
-  },
-  {
-    "type": "TEXT",
-    "name": "atkey",
-    "simpleValueType": true,
-    "alwaysInSummary": true,
-    "displayName": "Valor de Ring Pool",
-    "canBeEmptyString": true
-  },
-  {
-    "type": "TEXT",
-    "name": "atcat",
-    "simpleValueType": true,
-    "alwaysInSummary": true,
-    "displayName": "Categoría del producto o productos ofertados",
-    "canBeEmptyString": true
-  },
-  {
-    "type": "TEXT",
-    "name": "atmodel",
-    "simpleValueType": true,
-    "alwaysInSummary": true,
-    "displayName": "Modelo del producto o productos ofertados",
-    "canBeEmptyString": true
-  },
-  {
-    "type": "TEXT",
-    "name": "pageType",
-    "simpleValueType": true,
-    "alwaysInSummary": true,
-    "displayName": "Página del producto o productos ofertados",
-    "canBeEmptyString": true
-  },
-  {
-    "type": "SIMPLE_TABLE",
-    "name": "optional",
-    "displayName": "Variables opcionales para recoger en plataforma Talkie",
-    "simpleTableColumns": [
+    "displayName": "Dominio de cuenta proporcionado por Talkie",
+    "valueValidators": [
       {
-        "defaultValue": "",
-        "displayName": "Nombre",
-        "name": "name",
-        "type": "TEXT"
+        "type": "NON_EMPTY"
+      }
+    ]
+  },
+  {
+    "type": "GROUP",
+    "name": "parametrosOpcionales",
+    "displayName": "Parámetros Opcionales",
+    "groupStyle": "ZIPPY_CLOSED",
+    "subParams": [
+      {
+        "type": "TEXT",
+        "name": "matchId",
+        "displayName": "Match ID - Identificador de usuario proporcionado por el cliente",
+        "simpleValueType": true,
+        "canBeEmptyString": true
       },
       {
-        "defaultValue": "",
-        "displayName": "Valor",
-        "name": "value",
-        "type": "TEXT"
+        "type": "TEXT",
+        "name": "atkey",
+        "displayName": "Valor de Ring Pool",
+        "simpleValueType": true,
+        "canBeEmptyString": true
+      },
+      {
+        "type": "TEXT",
+        "name": "atcat",
+        "displayName": "Categoría del producto o productos ofertados",
+        "simpleValueType": true,
+        "canBeEmptyString": true
+      },
+      {
+        "type": "TEXT",
+        "name": "atmodel",
+        "displayName": "Modelo del producto o productos ofertados",
+        "simpleValueType": true,
+        "canBeEmptyString": true
+      },
+      {
+        "type": "TEXT",
+        "name": "pageType",
+        "displayName": "Página del producto o productos ofertados",
+        "simpleValueType": true,
+        "canBeEmptyString": true
+      },
+      {
+        "type": "SIMPLE_TABLE",
+        "name": "optional",
+        "displayName": "Variables opcionales para recoger en plataforma Talkie",
+        "simpleTableColumns": [
+          {
+            "defaultValue": "",
+            "displayName": "Nombre",
+            "name": "name",
+            "type": "TEXT"
+          },
+          {
+            "defaultValue": "",
+            "displayName": "Valor",
+            "name": "value",
+            "type": "TEXT"
+          }
+        ]
       }
     ]
   }
@@ -733,6 +741,6 @@ scenarios: []
 
 ___NOTES___
 
-Created on 27/6/2022, 13:57:21
+Created on 29/6/2022, 14:07:33
 
 
