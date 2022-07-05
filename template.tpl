@@ -140,7 +140,7 @@ audienceLayerPush(atObj);
 setInWindow('attm',8,true);
 setInWindow('atctv','v1',true);
 setInWindow('atcl',data.talkieDomain,true);
-let atpu = getUrl() || '';
+let atpu = encodeUriComponent(getUrl()) || '';
 setInWindow('atpu',atpu,true);
 let ccid = getCookieValues('atid');
 let atid = data.matchId.length == 36 ? data.matchId : (ccid ? ccid : '');
