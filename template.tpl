@@ -144,9 +144,11 @@ let atpu = encodeUriComponent(getUrl()) || '';
 setInWindow('atpu',atpu,true);
 let ccid = getCookieValues('atid');
 let atid = data.matchId.length == 36 ? data.matchId : (ccid ? ccid : '');
+atid = encodeUriComponent(atid);
 setInWindow('atid',atid,true);
 let cc = getCookieValues('atleadid');
 if(!cc[0]) cc[0] = generateRandom(0, 100000000000);
+cc[0] = encodeUriComponent(cc[0]);
 setInWindow('atleadid',cc[0],true);
 let ccOptions = {
   "max-age": 30 * 60000,
@@ -159,11 +161,11 @@ let atruOptions = {
 };
 let atru = getReferrerUrl() || '';
 if(getReferrerUrl('host') != getUrl('host') && atru){
-  atru = encodeUriComponent(atru);
   setCookie('atinf',atru,atruOptions);
 }else {
   atru = getCookieValues('atinf')[0] || '';
 }
+atru = encodeUriComponent(atru);
 setInWindow('atru',atru,true);
 audienceLayerPush({
   'time': getTimestampMillis(),
